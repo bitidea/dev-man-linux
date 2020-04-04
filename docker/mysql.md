@@ -15,12 +15,40 @@ docker run --name mysql \
     --collation-server=utf8mb4_unicode_ci
 ```
 
+#### 挂载配置、日志、数据目录
+
+```bash
+docker run --name mysql \
+    -e MYSQL_ROOT_PASSWORD=toor \
+    -p 3306:3306 \
+    -v /docker-data/mysql/conf:/etc/mysql \
+    -v /docker-data/mysql/log:/var/log/mysql \
+    -v /docker-data/mysql/data:/var/lib/mysql \
+    -d mysql:latest \
+    --character-set-server=utf8mb4 \
+    --collation-server=utf8mb4_unicode_ci
+```
+
 ### 5.7 版本
 
 ```bash
 docker run --name mysql57 \
     -e MYSQL_ROOT_PASSWORD=toor \
     -p 3306:3306 \
+    -d mysql:5.7 \
+    --character-set-server=utf8mb4 \
+    --collation-server=utf8mb4_unicode_ci
+```
+
+#### 挂载配置和数据目录
+
+```bash
+docker run --name mysql57 \
+    -e MYSQL_ROOT_PASSWORD=toor \
+    -p 3306:3306 \
+    -v /docker-data/mysql/conf:/etc/mysql \
+    -v /docker-data/mysql/log:/var/log/mysql \
+    -v /docker-data/mysql/data:/var/lib/mysql \
     -d mysql:5.7 \
     --character-set-server=utf8mb4 \
     --collation-server=utf8mb4_unicode_ci
