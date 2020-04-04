@@ -14,6 +14,7 @@
   * [安装](docker/install.md)
   * [镜像](docker/mirror.md)
   * [MySQL](docker/mysql.md)
+  * [Redis](docker/redis.md)
   * [MariaDB](docker/mariadb.md)
   * [Netdata](docker/netdata.md)
   * [Nextcloud](docker/nextcloud.md)
