@@ -10,6 +10,7 @@
 * [Swap](swap.md)
 * [SSH](ssh.md)
 * [V2ray](v2ray.md)
+* [nohup](nohup.md)
 * Docker
   * [安装](docker/install.md)
   * [镜像](docker/mirror.md)
