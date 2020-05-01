@@ -27,6 +27,7 @@
   * [容器自动启动](docker/always-restart.md)
 * Nginx
   * [快速教程](https://dunwu.github.io/nginx-tutorial/#/nginx-quickstart)
+  * [配置优化](https://www.nginx.com/blog/help-the-world-by-healing-your-nginx-configuration)
   * [反向代理](nginx/reverse-proxy.md)
   * [负载均衡](nginx/load-balance.md)
   * [高可用集群](nginx/high-availability.md)
