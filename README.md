@@ -23,6 +23,7 @@
   * [PostgreSQL](docker/postgresql.md)
   * [TensorFlow](docker/tensorflow.md)
   * [Pi-hole](docker/pi-hole.md)
+  * [MinIO](docker/minio.md)
   * [将当前登录用户加入到 Docker 组中](docker/group.md)
   * [容器自动启动](docker/always-restart.md)
 * Nginx
