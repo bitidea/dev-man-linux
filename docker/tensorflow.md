@@ -16,14 +16,15 @@ docker run -d \
 ## 测试
 
 ```bash
-docker run -it --rm tensorflow/tensorflow \
-  python -c "import tensorflow as tf; print(tf.reduce_sum(tf.random.normal([1000, 1000])))"
+docker run -it --rm \
+  tensorflow/tensorflow:latest-py3-jupyter \
+  python3 -c "import tensorflow as tf; print(tf.reduce_sum(tf.random.normal([1000, 1000])))"
 ```
 
 ## 进入容器控制台
 
 ```bash
-docker run -it tensorflow/tensorflow bash
+docker run -it tensorflow/tensorflow:latest-py3-jupyter bash
 ```
 
 ## 使用一个临时的 TensorFlow 容器运行当前目录下的 scirpt.py 脚本
@@ -31,5 +32,9 @@ docker run -it tensorflow/tensorflow bash
 运行结束之后容器自动删除
 
 ```bash
-docker run -it --rm -v $PWD:/tmp -w /tmp tensorflow/tensorflow python ./script.py
+docker run -it --rm \
+  -v $PWD:/tmp \
+  -w /tmp \
+  tensorflow/tensorflow:latest-py3-jupyter \
+  python3 model_train.py 64 100 1>log 2>&1
 ```
