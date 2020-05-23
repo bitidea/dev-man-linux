@@ -10,7 +10,7 @@
 * [Swap](swap.md)
 * [SSH](ssh.md)
 * [V2ray](v2ray.md)
-* [nohup](nohup.md)
+* [Jar Restart](jar-restart.md)
 * [TCP time_wait](tcp_time_wait.md)
 * Docker
   * [安装](docker/install.md)
