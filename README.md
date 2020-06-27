@@ -14,7 +14,7 @@
 * [TCP time_wait](tcp_time_wait.md)
 * Docker
   * [安装](docker/install.md)
-  * [镜像](docker/mirror.md)
+  * [镜像加速器](docker/mirror.md)
   * [MySQL](docker/mysql.md)
   * [Redis](docker/redis.md)
   * [MariaDB](docker/mariadb.md)

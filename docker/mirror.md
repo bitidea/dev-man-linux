@@ -1,6 +1,6 @@
-# 镜像
+# 镜像加速器
 
-https://yeasy.gitbooks.io/docker_practice/install/mirror.html
+https://yeasy.gitbook.io/docker_practice/install/mirror
 
 ```bash
 sudo vim /etc/docker/daemon.json
