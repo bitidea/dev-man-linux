@@ -8,9 +8,8 @@ sudo vim /etc/docker/daemon.json
 
 ```json
 {
-  "registry-mirrors": [
-    "https://hub-mirror.c.163.com",
-    "https://mirror.baidubce.com"
-  ]
+    "registry-mirrors": [
+        "https://mirror.baidubce.com"
+    ]
 }
 ```
