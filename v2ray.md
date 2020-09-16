@@ -2,17 +2,7 @@
 
 ## Install
 
-```bash
-sudo su
-```
-
-```bash
-apt update && apt install -y curl
-```
-
-```bash
-bash <(curl -L -s https://install.direct/go.sh)
-```
+https://github.com/v2fly/fhs-install-v2ray
 
 ## See Also
 

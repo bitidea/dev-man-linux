@@ -1,10 +1,10 @@
 # JAR Restart
 
-## `run.sh`
+## run.sh
 
 ```bash
 #!/usr/bin/env bash
-BASE_PATH="YOUR_BASE_PATH"
+BASE_PATH=$(pwd)
 JAR_FILENAME=$1
 LOG_FILENAME="$JAR_FILENAME.$(date +%s).log"
 JAR_PATH="$BASE_PATH/$JAR_FILENAME"
