@@ -13,11 +13,13 @@ docker run -d --name nexus_docker \
 
 数据目录：`/var/lib/docker/volumes`
 
-## 使用 SSL 隧道进行初始化
+## 使用 SSH 隧道进行初始化
 
 ```bash
 ssh -L 8081:127.0.0.1:8081 -N -T YOUR_SERVER_DOMAIN
 ```
+
+浏览器进入 http://127.0.0.1:8081
 
 ## 创建 Docker Repository
 
@@ -43,7 +45,7 @@ Realms ->
 ```nginx
 server {
     server_name YOUR_SERVER_DOMAIN;
-    listen       443 ssl;
+    listen       443 ssl http2;
 
     ssl_certificate /etc/ssl/YOUR_SERVER_DOMAIN.crt;
     ssl_certificate_key /etc/ssl/YOUR_SERVER_DOMAIN.key;
