@@ -9,14 +9,31 @@ useradd -m -s /bin/bash elk
 ## Elasticsearch
 
 ```bash
+vim conf/elasticsearch.conf
+```
+
+```text
+network.host: YOUR_SERVER_IP
+discovery.type: single-node
+```
+
+```bash
 bin/elasticsearch -d
 ```
 
 ```bash
-curl 127.0.0.1:9200
+curl YOUR_SERVER_IP:9200
 ```
 
 ## Kibana
+
+```bash
+vim config/kibana.yml
+```
+
+```text
+elasticsearch.hosts: ["http://YOUR_SERVER_IP:9200"]
+```
 
 ```bash
 bin/kibana \
@@ -24,7 +41,7 @@ bin/kibana \
 ```
 
 ```bash
-ssh -L 5601:127.0.0.1:5601 -N -T SSH_USERNAME@YOUR_SERVER_IP
+ssh -L 5601:YOUR_SERVER_IP:5601 -N -T SSH_USERNAME@YOUR_SERVER_IP
 ```
 
 ## Logstash
@@ -37,7 +54,7 @@ vim logstash.conf
 input {
     tcp {
         mode => "server"
-        host => "0.0.0.0"
+        host => "YOUR_SERVER_IP"
         port => 4560
         codec => json_lines
     }
@@ -45,7 +62,7 @@ input {
 
 output {
     elasticsearch {
-        hosts => "127.0.0.1:9200"
+        hosts => "YOUR_SERVER_IP:9200"
         index => "springboot-logstash-%{+YYYY.MM.dd}"
     }
 }
@@ -57,7 +74,7 @@ bin/logstash -f logstash.conf \
 ```
 
 ```bash
-ssh -L 4560:127.0.0.1:4560 -N -T SSH_USERNAME@YOUR_SERVER_IP
+ssh -L 4560:YOUR_SERVER_IP:4560 -N -T SSH_USERNAME@YOUR_SERVER_IP
 ```
 
 ## Spring Boot
