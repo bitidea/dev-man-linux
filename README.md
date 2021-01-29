@@ -12,6 +12,7 @@
 * [V2ray](v2ray.md)
 * [Jar Restart](jar-restart.md)
 * [TCP time_wait](tcp-time-wait.md)
+* [iptables 恢复默认设置](iptables-reset.md)
 * [ELK 日志收集系统](elk.md)
 * Docker
   * [安装](docker/install.md)
