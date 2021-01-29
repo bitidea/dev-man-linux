@@ -11,7 +11,7 @@
 * [SSH](ssh.md)
 * [V2ray](v2ray.md)
 * [Jar Restart](jar-restart.md)
-* [TCP time_wait](tcp_time_wait.md)
+* [TCP time_wait](tcp-time-wait.md)
 * [ELK 日志收集系统](elk.md)
 * Docker
   * [安装](docker/install.md)
