@@ -6,6 +6,7 @@
 
 # 目录
 
+* [Git 文件名大小写敏感](git-ignorecase.md)
 * [BBR](bbr.md)
 * [Swap](swap.md)
 * [SSH](ssh.md)
