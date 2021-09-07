@@ -18,6 +18,7 @@
 * Docker
   * [安装](docker/install.md)
   * [镜像加速器](docker/mirror.md)
+  * [清理](docker/prune.md)
   * [私有仓库搭建](docker/nexus-docker-registry.md)
   * [MySQL](docker/mysql.md)
   * [Redis](docker/redis.md)
