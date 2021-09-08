@@ -6,13 +6,17 @@ services:
     image: mysql:8.0
     command: --default-authentication-plugin=mysql_native_password --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
     restart: always
+    network_mode: bridge
     volumes:
       - $PWD/mysql_data:/var/lib/mysql
     environment:
       MYSQL_ROOT_PASSWORD: toor
+    ports:
+      - 3306:3306
 
   adminer:
     image: adminer:4-standalone
     restart: always
+    network_mode: bridge
     ports:
       - 8080:8080
