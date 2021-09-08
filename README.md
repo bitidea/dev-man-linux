@@ -27,7 +27,7 @@
   * [MinIO](docker/minio/README.md)
   * [OneDev](docker/onedev/README.md)
   * [Redis](docker/redis/README.md)
-  * [Netdata](docker/netdata.md)
+  * [Netdata](docker/netdata/README.md)
   * [Nextcloud](docker/nextcloud.md)
   * [PostgreSQL](docker/postgresql.md)
   * [TensorFlow](docker/tensorflow.md)
