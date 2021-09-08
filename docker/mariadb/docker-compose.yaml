@@ -1,0 +1,28 @@
+version: '3.1'
+
+services:
+
+  db:
+    image: mariadb:10
+    command: --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+    restart: always
+    networks:
+      - network_bridge
+    volumes:
+      - $PWD/mariadb_data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: toor
+    ports:
+      - 3306:3306
+
+  adminer:
+    image: adminer:4-standalone
+    restart: always
+    networks:
+      - network_bridge
+    ports:
+      - 8080:8080
+
+networks:
+  network_bridge:
+    driver: bridge
