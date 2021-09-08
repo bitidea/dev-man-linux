@@ -20,6 +20,7 @@
   * [镜像加速器](docker/mirror.md)
   * [清理](docker/prune.md)
   * [私有仓库搭建](docker/nexus-docker-registry.md)
+  * [Caddy](docker/caddy/README.md)
   * [MySQL](docker/mysql/README.md)
   * [Redis](docker/redis.md)
   * [MariaDB](docker/mariadb.md)
