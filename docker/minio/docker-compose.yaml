@@ -1,0 +1,21 @@
+version: '3.1'
+
+services: 
+  
+  minio:
+    image: minio/minio
+    command: server /data --console-address ":9001"
+    networks:
+      - network_bridge
+    volumes:
+      - $PWD/minio_data:/data
+    environment: 
+      - MINIO_ACCESS_KEY=miniominio
+      - MINIO_SECRET_KEY=miniominio
+    ports: 
+      - "9000:9000"
+      - "9001:9001"
+
+networks:
+  network_bridge:
+    driver: bridge
