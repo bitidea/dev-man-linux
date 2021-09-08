@@ -23,6 +23,7 @@
   * [Caddy](docker/caddy/README.md)
   * [MySQL](docker/mysql/README.md)
   * [MariaDB](docker/mariadb/README.md)
+  * [Jenkins](docker/jenkins/README.md)
   * [Redis](docker/redis.md)
   * [Netdata](docker/netdata.md)
   * [Nextcloud](docker/nextcloud.md)
