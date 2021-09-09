@@ -24,7 +24,7 @@
   * [容器自动启动](docker/always-restart.md)
   * [获取容器 IP 地址](docker/ip.md)
   * [TensorFlow](docker/tensorflow.md)
-  * [Docker Compose 集合](https://github.com/jerryshell/bitidea-docker-compose)
+  * [Docker Compose 集合](https://github.com/Bitidea/bitidea-docker-compose)
 * Nginx
   * [快速教程](https://dunwu.github.io/nginx-tutorial/#/nginx-quickstart)
   * [配置优化](https://www.nginx.com/blog/help-the-world-by-healing-your-nginx-configuration)
