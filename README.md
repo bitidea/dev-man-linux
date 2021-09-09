@@ -29,7 +29,7 @@
   * [Redis](docker/redis/README.md)
   * [Netdata](docker/netdata/README.md)
   * [Nextcloud](docker/nextcloud/README.md)
-  * [PostgreSQL](docker/postgresql.md)
+  * [PostgreSQL](docker/nextcloud/README.md)
   * [TensorFlow](docker/tensorflow.md)
   * [Pi-hole](docker/pi-hole.md)
   * [MinIO](docker/minio.md)
