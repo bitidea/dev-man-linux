@@ -9,8 +9,7 @@ sudo vim /etc/docker/daemon.json
 ```json
 {
     "registry-mirrors": [
-        "https://ustc-edu-cn.mirror.aliyuncs.com",
-        "https://kk24uads.mirror.aliyuncs.com"
+        "https://ustc-edu-cn.mirror.aliyuncs.com"
     ]
 }
 ```
