@@ -86,7 +86,7 @@ systemctl restart k3s.service
 ```bash
 k3s kubectl apply -f https://raw.githubusercontent.com/kubesphere/ks-installer/master/deploy/kubesphere-installer.yaml
 
-k3s kubectl apply -f https://raw.githubusercontent.com/kubesphere/ks-installer/master/deploy/kubesphere-installer.yaml
+k3s kubectl apply -f https://raw.githubusercontent.com/kubesphere/ks-installer/master/deploy/cluster-configuration.yaml
 ```
 
 #### 国际互联网受限
@@ -94,7 +94,7 @@ k3s kubectl apply -f https://raw.githubusercontent.com/kubesphere/ks-installer/m
 ```bash
 k3s kubectl apply -f https://raw.fastgit.org/kubesphere/ks-installer/master/deploy/kubesphere-installer.yaml
 
-k3s kubectl apply -f https://raw.fastgit.org/kubesphere/ks-installer/master/deploy/kubesphere-installer.yaml
+k3s kubectl apply -f https://raw.fastgit.org/kubesphere/ks-installer/master/deploy/cluster-configuration.yaml
 ```
 
 ### 信息
