@@ -96,6 +96,14 @@ admin
 P@88w0rd
 ```
 
+### 进入面板
+
+```bash
+ssh -L 30880:127.0.0.1:30880 -N -T -v root@SERVER_IP
+```
+
+[http://127.0.0.1:30880](http://127.0.0.1:30880)
+
 ### 从 Kubernetes 上卸载 KubeSphere
 
 [https://kubesphere.io/zh/docs/installing-on-kubernetes/uninstall-kubesphere-from-k8s/](https://kubesphere.io/zh/docs/installing-on-kubernetes/uninstall-kubesphere-from-k8s/)
