@@ -84,17 +84,17 @@ systemctl restart k3s.service
 #### 国际互联网顺畅
 
 ```bash
-k3s kubectl apply -f https://raw.githubusercontent.com/kubesphere/ks-installer/master/deploy/kubesphere-installer.yaml
+k3s kubectl apply -f https://github.com/kubesphere/ks-installer/releases/download/v3.2.1/kubesphere-installer.yaml
 
-k3s kubectl apply -f https://raw.githubusercontent.com/kubesphere/ks-installer/master/deploy/cluster-configuration.yaml
+k3s kubectl apply -f https://github.com/kubesphere/ks-installer/releases/download/v3.2.1/cluster-configuration.yaml
 ```
 
 #### 国际互联网受限
 
 ```bash
-k3s kubectl apply -f https://raw.fastgit.org/kubesphere/ks-installer/master/deploy/kubesphere-installer.yaml
+k3s kubectl apply -f https://download.fastgit.org/kubesphere/ks-installer/releases/download/v3.2.1/kubesphere-installer.yaml
 
-k3s kubectl apply -f https://raw.fastgit.org/kubesphere/ks-installer/master/deploy/cluster-configuration.yaml
+k3s kubectl apply -f https://download.fastgit.org/kubesphere/ks-installer/releases/download/v3.2.1/cluster-configuration.yaml
 ```
 
 ### 信息
