@@ -13,6 +13,7 @@
 * [V2ray](v2ray.md)
 * [ELK 日志收集系统](elk.md)
 * [Git 文件名大小写敏感](git-ignorecase.md)
+* [K3S + KubeSphere](k3s-kubesphere.md)
 
 # Docker
 
