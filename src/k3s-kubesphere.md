@@ -79,13 +79,25 @@ systemctl restart k3s.service
 
 [https://kubesphere.io/docs/quick-start/minimal-kubesphere-on-k8s/](https://kubesphere.io/docs/quick-start/minimal-kubesphere-on-k8s/)
 
-```bash
-k3s kubectl apply -f https://raw.githubusercontent.com/kubesphere/ks-installer/master/deploy/kubesphere-installer.yaml
-```
+### 安装
+
+#### 国际互联网顺畅
 
 ```bash
 k3s kubectl apply -f https://raw.githubusercontent.com/kubesphere/ks-installer/master/deploy/kubesphere-installer.yaml
+
+k3s kubectl apply -f https://raw.githubusercontent.com/kubesphere/ks-installer/master/deploy/kubesphere-installer.yaml
 ```
+
+#### 国际互联网受限
+
+```bash
+k3s kubectl apply -f https://raw.fastgit.org/kubesphere/ks-installer/master/deploy/kubesphere-installer.yaml
+
+k3s kubectl apply -f https://raw.fastgit.org/kubesphere/ks-installer/master/deploy/kubesphere-installer.yaml
+```
+
+### 信息
 
 ```text
 IP:30880
