@@ -2,7 +2,7 @@
 
 ## K3S
 
-https://docs.rancher.cn/docs/k3s/quick-start/_index
+[https://docs.rancher.cn/docs/k3s/quick-start/_index](https://docs.rancher.cn/docs/k3s/quick-start/_index)
 
 ### Master
 

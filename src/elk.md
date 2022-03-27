@@ -81,7 +81,7 @@ ssh -L 4560:YOUR_SERVER_IP:4560 -N -T SSH_USERNAME@YOUR_SERVER_IP
 
 ### POM
 
-https://github.com/logstash/logstash-logback-encoder
+[https://github.com/logstash/logstash-logback-encoder](https://github.com/logstash/logstash-logback-encoder)
 
 ```xml
 <dependency>
