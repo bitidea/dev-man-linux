@@ -8,25 +8,25 @@
 
 #### 安装最新稳定版本
 
-```
+```bash
 curl -sfL http://rancher-mirror.cnrancher.com/k3s/k3s-install.sh | INSTALL_K3S_MIRROR=cn sh -
 ```
 
 #### 安装指定版本
 
-```
+```bash
 curl -sfL http://rancher-mirror.cnrancher.com/k3s/k3s-install.sh | INSTALL_K3S_VERSION=v1.21.4+k3s1 INSTALL_K3S_MIRROR=cn sh -
 ```
 
-#### 配置文件
+#### kubeconfig 文件
 
-```
+```bash
 cp /etc/rancher/k3s/k3s.yaml ~/.kube/config
 ```
 
 #### node-token
 
-```
+```bash
 cat /var/lib/rancher/k3s/server/node-token
 ```
 
@@ -34,13 +34,13 @@ cat /var/lib/rancher/k3s/server/node-token
 
 #### 安装最新稳定版本
 
-```
+```bash
 curl -sfL http://rancher-mirror.cnrancher.com/k3s/k3s-install.sh | K3S_URL=https://myserver:6443 K3S_TOKEN=mynodetoken sh -
 ```
 
 #### 安装指定版本
 
-```
+```bash
 curl -sfL http://rancher-mirror.cnrancher.com/k3s/k3s-install.sh | INSTALL_K3S_VERSION=v1.21.4+k3s1 K3S_URL=https://myserver:6443 K3S_TOKEN=mynodetoken sh -
 ```
 
@@ -65,13 +65,13 @@ systemctl restart k3s.service
 
 #### Master 卸载
 
-```
+```bash
 /usr/local/bin/k3s-uninstall.sh
 ```
 
 #### Worker 卸载
 
-```
+```bash
 /usr/local/bin/k3s-agent-uninstall.sh
 ```
 
@@ -79,19 +79,19 @@ systemctl restart k3s.service
 
 [https://kubesphere.io/docs/quick-start/minimal-kubesphere-on-k8s/](https://kubesphere.io/docs/quick-start/minimal-kubesphere-on-k8s/)
 
-```
-k3s kubectl apply -f https://github.com/kubesphere/ks-installer/releases/download/v3.2.1/kubesphere-installer.yaml
-```
-
-```
-k3s kubectl apply -f https://github.com/kubesphere/ks-installer/releases/download/v3.2.1/cluster-configuration.yaml
+```bash
+k3s kubectl apply -f https://raw.githubusercontent.com/kubesphere/ks-installer/master/deploy/kubesphere-installer.yaml
 ```
 
+```bash
+k3s kubectl apply -f https://raw.githubusercontent.com/kubesphere/ks-installer/master/deploy/kubesphere-installer.yaml
 ```
+
+```text
 IP:30880
 ```
 
-```
+```text
 admin
 P@88w0rd
 ```
