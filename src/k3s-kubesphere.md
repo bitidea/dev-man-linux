@@ -115,7 +115,7 @@ kubectl port-forward traefik-XXX -n kube-system 9000:9000
 ```
 
 ```bash
-ssh -L 9000:172.31.182.211:9000 -N -T -v root@SERVER_IP
+ssh -L 9000:127.0.0.1:9000 -N -T -v root@SERVER_IP
 ```
 
 [http://localhost:9000/dashboard/](http://localhost:9000/dashboard/)
