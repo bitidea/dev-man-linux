@@ -12,12 +12,6 @@
 curl -sfL http://rancher-mirror.cnrancher.com/k3s/k3s-install.sh | INSTALL_K3S_MIRROR=cn sh -
 ```
 
-#### 安装指定版本
-
-```bash
-curl -sfL http://rancher-mirror.cnrancher.com/k3s/k3s-install.sh | INSTALL_K3S_VERSION=v1.21.4+k3s1 INSTALL_K3S_MIRROR=cn sh -
-```
-
 #### kubeconfig 文件
 
 ```bash
@@ -35,13 +29,7 @@ cat /var/lib/rancher/k3s/server/node-token
 #### 安装最新稳定版本
 
 ```bash
-curl -sfL http://rancher-mirror.cnrancher.com/k3s/k3s-install.sh | K3S_URL=https://myserver:6443 K3S_TOKEN=mynodetoken sh -
-```
-
-#### 安装指定版本
-
-```bash
-curl -sfL http://rancher-mirror.cnrancher.com/k3s/k3s-install.sh | INSTALL_K3S_VERSION=v1.21.4+k3s1 K3S_URL=https://myserver:6443 K3S_TOKEN=mynodetoken sh -
+curl -sfL http://rancher-mirror.cnrancher.com/k3s/k3s-install.sh | INSTALL_K3S_MIRROR=cn K3S_URL=https://myserver:6443 K3S_TOKEN=mynodetoken sh -
 ```
 
 ### 配置 containerd 镜像
@@ -139,3 +127,21 @@ ssh -L 9000:127.0.0.1:9000 -N -T -v root@SERVER_IP
 ```
 
 [http://localhost:9000/dashboard/](http://localhost:9000/dashboard/)
+
+## Kuboard
+
+[https://github.com/eip-work/kuboard-press/blob/master/install/v3/install-built-in.md](https://github.com/eip-work/kuboard-press/blob/master/install/v3/install-built-in.md)
+
+请不要使用 `127.0.0.1` 或者 `localhost` 作为内网 IP
+  
+```bash
+sudo docker run -d \
+  --restart=unless-stopped \
+  --name=kuboard \
+  -p 80:80/tcp \
+  -p 10081:10081/tcp \
+  -e KUBOARD_ENDPOINT="http://内网IP:80" \
+  -e KUBOARD_AGENT_SERVER_TCP_PORT="10081" \
+  -v /root/kuboard-data:/data \
+  eipwork/kuboard:v3
+```
