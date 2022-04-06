@@ -4,6 +4,7 @@
 
 # 系统
 
+* [一键导入 SSH Key](ssh-key-one-line.md)
 * [SSH](ssh.md)
 * [BBR](bbr.md)
 * [Swap](swap.md)
