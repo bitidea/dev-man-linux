@@ -5,6 +5,7 @@
 # 系统
 
 * [一键导入 SSH Key](ssh-key-one-line.md)
+* [获取本机当前公网 IP 的几种方法](get-public-ip.md)
 * [SSH](ssh.md)
 * [BBR](bbr.md)
 * [Swap](swap.md)
