@@ -17,3 +17,9 @@ curl cip.cc
 ```bash
 curl ipinfo.io
 ```
+
+## 方法 4
+
+```bash
+curl realip.cc
+```
