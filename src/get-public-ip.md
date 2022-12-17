@@ -1,5 +1,11 @@
 # 获取本机当前公网 IP 的几种方法
 
+## 方法 0
+
+```bash
+curl https://myip.d8s.fun
+```
+
 ## 方法 1
 
 ```bash
