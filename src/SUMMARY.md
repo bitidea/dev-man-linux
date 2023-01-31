@@ -14,6 +14,7 @@
 * [使用 cat 替代 dd](dd.md)
 * [iptables 恢复默认设置](iptables-reset.md)
 * [V2ray](v2ray.md)
+* [精选集·使用 Rust 编写的命令行工具](rust-cli-list.md)
 * [ELK 日志收集系统](elk.md)
 * [Git 文件名大小写敏感](git-ignorecase.md)
 * [K3S + KubeSphere](k3s-kubesphere.md)
