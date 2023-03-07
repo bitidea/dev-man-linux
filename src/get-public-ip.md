@@ -29,3 +29,10 @@ curl ipinfo.io
 ```bash
 curl realip.cc
 ```
+
+# 方法 5
+
+```bash
+curl https://api.live.bilibili.com/ip_service/v1/ip_service/get_ip_addr
+```
+
