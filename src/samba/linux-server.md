@@ -31,4 +31,10 @@ public=no
 sudo smbpasswd -a smb
 ```
 
+```bash
+sudo systemctl restart smbd
+```
+
+## 连接
+
 `\\192.168.1.23\smbshare`
