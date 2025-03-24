@@ -6,4 +6,4 @@
 
 ## See Also
 
-* [https://toutyrater.github.io/](https://toutyrater.github.io/)
+- [https://toutyrater.github.io/](https://toutyrater.github.io/)

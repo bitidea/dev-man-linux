@@ -2,7 +2,7 @@
 
 ## K3S
 
-[https://docs.rancher.cn/docs/k3s/quick-start/_index](https://docs.rancher.cn/docs/k3s/quick-start/_index)
+[https://docs.rancher.cn/docs/k3s/quick-start/\_index](https://docs.rancher.cn/docs/k3s/quick-start/_index)
 
 ### Master
 
@@ -133,7 +133,7 @@ ssh -L 9000:127.0.0.1:9000 -N -T -v root@SERVER_IP
 [https://github.com/eip-work/kuboard-press/blob/master/install/v3/install-built-in.md](https://github.com/eip-work/kuboard-press/blob/master/install/v3/install-built-in.md)
 
 请不要使用 `127.0.0.1` 或者 `localhost` 作为内网 IP
-  
+
 ```bash
 sudo docker run -d \
   --restart=unless-stopped \
